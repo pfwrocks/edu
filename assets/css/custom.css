@@ -1,0 +1,15 @@
+body { background-color:#fbcbea;  }
+.navbar { background-color:green;  }
+.header-pfw {
+	background-image: url(http://cs.virginia.edu/~up3f/cs4640/inclass/bootstrap/images/rice-hall.jpg);
+	background-position: center;
+	background-size: cover;
+}
+
+.container-pfw {
+	border: 1px solid #666;
+	border-radius: 6px;
+	display: inline-block;
+	margin: 40px;
+	padding: 10px;
+}

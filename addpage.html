@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>New Element</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Preston Wright">
+  <meta name="description" content="a modern approach to teaching">
+  <meta name="keywords" content="faculty student learning teaching">
+
+  <!-- Bootstrap 4 -->
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+  <script src="./assets/css/jquery.min.js"></script>
+  <script src="./assets/css/popper.min.js"></script>
+  <script src="./assets/css/bootstrap.min.js"></script>
+
+  <!-- Font Awesome -->
+  <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./assets/css/custom.css">
+  <script src="./assets/js/addpage.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./assets/css/edu.css">
+
+</head>
+
+<body>
+  <div class="row">
+    <!-- FORM -->
+    <div class="col-md-9" id="div-form">
+      <h2>Creating a New Page Element</h2>
+      <form class="edu-active">
+        <input class="form-control form-control-lg" type="text" placeholder="Main Title" required>
+        <input class="form-control form-control-lg" type="text" placeholder="subtitle (optional)">
+        <input class="form-control form-control-lg" type="text" placeholder="overview (optional)">
+      </form>
+    </div>
+    <!-- CONTROL PANEL -->
+    <div class="col-md-3">
+      <center>
+        <h1> Add Element </h1>
+        <hr />
+        <h3> Headers </h3>
+        <button type="button" class="btn btn-success" onclick="add_header('LG')" id="lg-list">+LG</button>
+        <button type="button" class="btn btn-danger" onclick="remove_div('LG')">-LG</button>
+        <p></p>
+        <button type="button" class="btn btn-success" onclick="add_header('MED')" id="md-list">+MD</button>
+        <button type="button" class="btn btn-danger" onclick="remove_div('MED')">-MD</button>
+        <p></p>
+        <button type="button" class="btn btn-success" onclick="add_header('SM')" id="sm-list">+SM</button>
+        <button type="button" class="btn btn-danger" onclick="remove_div('SM')">-SM</button>
+        <hr />
+        <h3> Text </h3>
+        <button type="button" class="btn btn-success" onclick="add_text()" id="txt-list">+txt</button>
+        <button type="button" class="btn btn-danger" onclick="remove_div('text')">-txt</button>
+        <hr />
+        <button type="button" class="btn btn-primary" onclick="add_submit()">Finished</button>
+      </center>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+    window.onload = function() {
+      document.getElementById("lg-list").addEventListener("click", remove_submits);
+      document.getElementById("md-list").addEventListener("click", remove_submits);
+      document.getElementById("sm-list").addEventListener("click", remove_submits);
+      document.getElementById("txt-list").addEventListener("click", remove_submits);
+      console.log("event listener added")
+    }
+  </script>
+
+</body>
+
+</html>
