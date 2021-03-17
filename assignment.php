@@ -6,7 +6,13 @@
 ?>
 
 <body>
-  <?php include('./page-elements/navbar.html')?>
+  <?php
+    $file = './page-elements/navbar.php';
+    $variables = array('nav2'=>true);
+    includeFile($file, $variables);
+  ?>
+
+
   <div class="row">
     <div class="col-sm-6"> <?php include('./page-elements/tag.html')?> </div>
     <div class="col-sm-6"> <h1 class="float-right" id="timeleft" style="padding-right:5%">Test</h1> </div>

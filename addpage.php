@@ -6,7 +6,14 @@
 ?>
 
 <body>
-  <?php include('./page-elements/navbar.html')?>
+  <?php
+    $file = './page-elements/navbar.php';
+    $variables = array('nav2'=>false);
+    includeFile($file, $variables);
+  ?>
+  <script src="./assets/js/addpage.js" defer="true"></script>
+
+
   <div class="row">
     <!-- FORM -->
     <div class="col-md-9" id="div-form">
@@ -41,6 +48,7 @@
     </div>
   </div>
 
+<!-- EVENT LISTENERS -->
   <script type="text/javascript">
     window.onload = function() {
       document.getElementById("lg-list").addEventListener("click", remove_submits);

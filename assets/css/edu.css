@@ -1,6 +1,6 @@
 .edu-primary{ color:#9c27b0;  }
 body, .form-control{background-color:lavender;}
 h1 { font-family: serif;}
-.edu-active { background-color:orange; color:#f1f1f1 }
+.edu-active { }
 input[type=checkbox]:checked + span{ text-decoration: line-through; }
 nav a { color: inherit; }

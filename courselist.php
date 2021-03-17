@@ -34,7 +34,11 @@
     }
   </style>
 
-  <?php include('./page-elements/navbar.html')?>
+  <?php
+    $file = './page-elements/navbar.php';
+    $variables = array('nav2'=>false);
+    includeFile($file, $variables);
+  ?>
 
   <h1 style="text-align:center">Course List</h1>
   <div class="row">
