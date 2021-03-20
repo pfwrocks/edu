@@ -1,35 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <title>EDU</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="author" content="Preston Wright">
-  <meta name="description" content="a modern approach to teaching">
-  <meta name="keywords" content="faculty student learning teaching">
-
-  <!-- Bootstrap 4 -->
-  <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
-  <script src="./assets/css/jquery.min.js"></script>
-  <script src="./assets/css/popper.min.js"></script>
-  <script src="./assets/css/bootstrap.min.js"></script>
-
-  <!-- Font Awesome -->
-  <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
-
-</head>
+<?php
+  include('../assets/php/edu.php');
+  $file = "../page-elements/header.php";
+  $variables = array('title'=>'Course List');
+  includeFile($file, $variables);
+?>
 
 <body style="background-color:lavender;">
 
-  <?php include('./page-elements/navbar.html')?>
+  <?php
+    $file = '../page-elements/navbar.php';
+    $variables = array('nav2'=>false);
+    includeFile($file, $variables);
+  ?>
+
   <br/>
 
   <div class="row">
     <div class="col-sm-1"> </div>
     <div class="col-sm-8">
       <h1> PDF EXAMPLE </h1>
-      <embed src="./assets/files/syllabus.pdf" width="100%" height="900px" />
+      <embed src="../assets/files/syllabus.pdf" width="100%" height="900px" />
       <h1> WORD EXAMPLE </h1>
       <iframe src='https://view.officeapps.live.com/op/embed.aspx?src=http://www.learningaboutelectronics.com/Articles/NP-modernization-act-new-york-state.doc' width='100%' height='565px' frameborder='0'> </iframe>
     </div>

@@ -1,6 +1,6 @@
 <?php
-  include('./assets/php/edu.php');
-  $file = "./page-elements/header.php";
+  include('../assets/php/edu.php');
+  $file = "../page-elements/header.php";
   $variables = array('title'=>'Course List');
   includeFile($file, $variables);
 ?>
@@ -35,7 +35,7 @@
   </style>
 
   <?php
-    $file = './page-elements/navbar.php';
+    $file = '../page-elements/navbar.php';
     $variables = array('nav2'=>false);
     includeFile($file, $variables);
   ?>

@@ -1,20 +1,20 @@
 <?php
-  include('./assets/php/edu.php');
-  $file = "./page-elements/header.php";
+  include('../assets/php/edu.php');
+  $file = "../page-elements/header.php";
   $variables = array('title'=>'Assignment');
   includeFile($file, $variables);
 ?>
 
 <body>
   <?php
-    $file = './page-elements/navbar.php';
+    $file = '../page-elements/navbar.php';
     $variables = array('nav2'=>true);
     includeFile($file, $variables);
   ?>
 
 
   <div class="row">
-    <div class="col-sm-6"> <?php include('./page-elements/tag.html')?> </div>
+    <div class="col-sm-6"> <?php include('../page-elements/tag.html')?> </div>
     <div class="col-sm-6"> <h1 class="float-right" id="timeleft" style="padding-right:5%">Test</h1> </div>
   </div>
 

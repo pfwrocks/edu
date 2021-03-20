@@ -1,17 +1,17 @@
 <?php
-  include('./assets/php/edu.php');
-  $file = "./page-elements/header.php";
+  include('../assets/php/edu.php');
+  $file = "../page-elements/header.php";
   $variables = array('title'=>'Add Page');
   includeFile($file, $variables);
 ?>
 
 <body>
   <?php
-    $file = './page-elements/navbar.php';
+    $file = '../page-elements/navbar.php';
     $variables = array('nav2'=>false);
     includeFile($file, $variables);
   ?>
-  <script src="./assets/js/addpage.js" defer="true"></script>
+  <script src="../assets/js/addpage.js" defer="true"></script>
 
 
   <div class="row">

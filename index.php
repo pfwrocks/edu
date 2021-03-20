@@ -8,20 +8,20 @@
 <body>
   <h3>Main Pages</h3>
   <p>
-    <a href="./courselist.php" target="_blank"> Courselist </a> | main viewscreen for currently enrolled courses
+    <a href="./pages/courselist.php" target="_blank"> Courselist </a> | main viewscreen for currently enrolled courses
   </p>
   <p>
-    <a href="./addpage.php" target="_blank"> Element Creation </a> | for building new pages (assignments, notes, etc.)
+    <a href="./pages/addpage.php" target="_blank"> Element Creation </a> | for building new pages (assignments, notes, etc.)
   </p>
   <p>
-    <a href="./assignment.php" target="_blank"> Standard Assignment </a> | classic view
+    <a href="./pages/assignment.php" target="_blank"> Standard Assignment </a> | classic view
   </p>
 
 
 <hr />
 <h3> Demos </h3>
   <p>
-    <a href="./filepage.php" target="_blank"> Page View </a> | basic layout for a page with posted attachment
+    <a href="./demos/filepage.php" target="_blank"> Page View </a> | basic layout for a page with posted attachment
   </p>
 
 </body>
