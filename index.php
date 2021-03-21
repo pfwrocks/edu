@@ -8,6 +8,9 @@
 <body>
   <h3>Main Pages</h3>
   <p>
+    <a href="./login/login.php" target="_blank"> Login </a>
+  </p>
+  <p>
     <a href="./pages/courselist.php" target="_blank"> Courselist </a> | main viewscreen for currently enrolled courses
   </p>
   <p>

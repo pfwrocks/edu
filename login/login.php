@@ -5,7 +5,7 @@
   includeFile($file, $variables);
 ?>
 
-<body>
+<body style="background-image: url('./mountain.jpg')">
 
   <style>
     label { display: block; }
@@ -57,12 +57,6 @@
     }
    </style>
 
-   <?php
-     $file = '../page-elements/navbar.php';
-     $variables = array('nav2'=>false);
-     includeFile($file, $variables);
-   ?>
-
   <?php
     $num_attempts = 0;
     if (isset($_GET['attempt'])) {
@@ -71,8 +65,14 @@
     }
   ?>
 
+  <div style="padding-bottom:15%"> </div>
   <div>
-    <h1>PHP: Form Handling</h1>
+    <h1>
+      <div class="">
+        <span class="fas fa-mountain" style="color:green"></span>
+        <span>EDU</span>
+      </div>
+    </h1>
     <form action="login.php" method="post">
 
       Username: <input type="text" name="name" required <?php if (isset($_GET['attempt']) && $_GET['attempt']>=3) { ?>disabled<?php } ?>/> <br/>

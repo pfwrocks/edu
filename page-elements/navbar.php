@@ -3,7 +3,7 @@
   <!-- LEFT -->
   <a href="/" class="navbar-brand d-flex w-50 mr-auto">
     <div class="">
-      <span class="fas fa-plane"></span>
+      <span class="fas fa-mountain"></span>
       <span>EDU</span>
     </div>
   </a>
