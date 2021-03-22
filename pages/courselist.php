@@ -40,7 +40,7 @@
     includeFile($file, $variables);
   ?>
 
-  <h1 style="text-align:center">Course List</h1>
+  <h1 style="text-align:center; padding-top:3%">Course List</h1>
   <div class="row">
     <div class="col-md-1"></div>
     <div class="col-md-9">

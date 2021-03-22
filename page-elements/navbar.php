@@ -1,7 +1,7 @@
 <!-- NAVBAR TOP -->
 <nav class="navbar navbar-dark navbar-expand-sm bg-dark justify-content-center sticky-top">
   <!-- LEFT -->
-  <a href="/" class="navbar-brand d-flex w-50 mr-auto">
+  <a href="../index.php" class="navbar-brand d-flex w-50 mr-auto">
     <div class="">
       <span class="fas fa-mountain"></span>
       <span>EDU</span>
@@ -22,10 +22,10 @@
     <!-- Right -->
     <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
       <li class="nav-item">
-        <a class="nav-link" href="#">Courses</a>
+        <a class="nav-link" href="../pages/courselist.php">Courses</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">My Account</a>
+        <a class="nav-link" href="../login/login.php">My Account</a>
       </li>
     </ul>
   </div>

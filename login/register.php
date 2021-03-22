@@ -1,11 +1,11 @@
 <?php
   include('../assets/php/edu.php');
   $file = "../page-elements/header.php";
-  $variables = array('title'=>'Login');
+  $variables = array('title'=>'Register');
   includeFile($file, $variables);
 ?>
 
-<body style="background-image: url('./mountain.jpg')">
+<body>
 
   <style>
     label { display: block; }
@@ -71,28 +71,19 @@
     }
   ?>
 
-  <div style="padding-bottom:15%"> </div>
   <div>
-    <h1>
-      <div class="">
-        <span class="fas fa-mountain" style="color:green"></span>
-        <span>EDU</span>
-      </div>
-    </h1>
+    <h1 style="padding-top:2%"> <div> <span>Register for EDU</span> </div> </h1>
     <form action="login.php" method="post">
 
-      Username: <input type="text" name="name" required <?php if (isset($_GET['attempt']) && $_GET['attempt']>=3) { ?>disabled<?php } ?>/> <br/>
-      Password: <input type="password" name="pwd" required <?php if (isset($_GET['attempt']) && $_GET['attempt']>=3) { ?>disabled<?php } ?>/> <br/>
+      Username: <input type="text" name="name" required /> <br/>
+      Password: <input type="password" name="pwd" required /> <br/>
+      Confirm Password: <input type="password2" name="pwd2" required /> <br/>
       <br>
       <input hidden type="text" name="attempt" value="<?php echo $num_attempts ?>"/>
-      <input type="submit" value="Submit" class="btn btn-secondary" <?php if (isset($_GET['attempt']) && $_GET['attempt']>=3) { ?>disabled<?php } ?> />
+      <input type="submit" value="Register" class="btn btn-secondary" />
     </form>
 
     <?php if (isset($_GET['attempt']) && $_GET['attempt']>=3) { ?><h1>Too Many Attempts</h1><?php } ?>
-
-    <center>
-      <h5> <a href="./register.php">Create Account</a> </h5>
-    </center>
 
 
 <?php
